@@ -1,10 +1,243 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Portfolio Viktor</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css"  type="text/css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body>
-        <h1>Hello, world!</h1>
+        <div class="parallax_wrapper" id="body">
+            <div class="parallax_group intro_screen" id="intro">
+                <div class="image-container">
+                    <h3 data-value="VIKTOR LADANG" class="intro_title" id="hacker_title">VIKTOR LADANG</h3>
+                </div>
+            </div>
+            <div class="backgroundcard group1">
+                <h6 data-value="Seminaries 2021 - 2022" class="backgroundcard-title" id="hacker_title">Seminaries 2021 - 2022</h6>
+                <div class="card-group">
+                    <div class="container">
+                        <div class="card" id="card-1">
+                            <div class="front">
+                                <p>Clean coding</p>
+                            </div>
+                            <div class="back">
+                                <p>Interacto</p>
+                                <p>1/03/2022 (3u)</p>
+                                <p>Een seminarie waarbij uitgelegd wordt hoe programmeurs beter en gestructureerder kunnen schrijven, zodat makkelijk leesbaar en uitbreidbaar blijven.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="card" id="card-1">
+                            <div class="front">
+                                <p class="title">From idea to solution and basics UI/UX</p>
+                            </div>
+                            <div class="back">
+                                <p class="bold">Craftworkz</p>
+                                <p class="bold">8/03/2022 (3u)</p>
+                                <p>Een inleiding over User Interfaces en hoe deze het best wordt opgesteld zodat dit voor een zo goed mogelijke Use Experience zorgt.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="card" id="card-1">
+                            <div class="front">
+                                <p class="title">API-first web development using Laravel and Vue.js</p>
+                            </div>
+                            <div class="back">
+                                <p>Easi</p>
+                                <p>19/04/2022 (3u)</p>
+                                <p>Een hands-on introductie in het backend framework Laravel en PHP, in combinatie met het frontend framework Vue.js en typescript.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="card" id="card-1">
+                            <div class="front">
+                                <p class="title">Interactive/Wisemen: Interactive web apps with Vue</p>
+                            </div>
+                            <div class="back">
+                                <p>Wisemen</p>
+                                <p>17/05/2022 (3u)</p>
+                                <p>Een hands-on ervaring met het Vue.js framework waarbij een Pokédex wordt nagemaakt.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="backgroundcard">
+                <h6 class="backgroundcard-title" id="hacker_title">Seminaries 2022 - 2023</h6>
+                <div class="card-group">
+                    <div class="container">
+                        <div class="card" id="card-2">
+                            <div class="front">
+                                <p class="title">Data/AI strategy</p>
+                            </div>
+                            <div class="back">
+                                <p>Dataroots</p>
+                                <p>26/10/2022 (3u)</p>
+                                <p>Een niet technisch seminarie met een focus op business value en uitleg over hoe AI use cases tot stand komen in bedrijven. Hierbij wordt gekeken naar AI use case discovery, AI use case prioritization, AI maturity assessment, data geverence, …</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="card" id="card-2">
+                            <div class="front">
+                                <p class="title">Flutter</p>
+                            </div>
+                            <div class="back">
+                                <p>Xplore Group</p>
+                                <p>19/11/2022 (3u)</p>
+                                <p>Een introductie ‘All screen development’ met het framework Flutter en de taal Dart. Dit seminarie was een inleiding in het framework to een werkende app op verschillende devices.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="card" id="card-2">
+                            <div class="front">
+                                <p class="title">Accesibility & UX: Building Mobile App for All</p>
+                            </div>
+                            <div class="back">
+                                <p>ACA Group</p>
+                                <p>16/11/2022 (3u)</p>
+                                <p>In de maatschappij van vandaag is het belangrijk de user experience zo inclusief mogelijk te maken. Er wordt uitgelegd hoe dit bereikt kon worden en werd er meer uitleg gegeven over de wettelijke verplichtingen van web toegankelijkheid.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="card" id="card-2">
+                            <div class="front">
+                                <p class="title">Solid</p>
+                            </div>
+                            <div class="back">
+                                <p>Konsolidate</p>
+                                <p>07/12/2022 (3u)</p>
+                                <p>Solid is een nieuwe technologie, gebaseerd op bestaande W3C standaarden. Het basisidee is om data en applicaties los te koppelen van elkaarm en de data te plaatsen onder diegene die er controle over behoort te hebben.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="backgroundcard">
+                <h6 class="backgroundcard-title" id="hacker_title">Innovatieroutes</h6>
+                <div class="portfolio">
+                    <div class="item">
+                      <h2>No Code</h2>
+                      <p class="date">October 7, 2022 (4u)</p>
+                      <p class="description">Dit seminarie was een kleine inleiding in No code en Low Code programma’s. Waarbij er programma’s zoals Betty Blocks en Zoho Creator verkent werden. Met een hands-on experience met Betty Blocks.</p>
+                    </div>
+                    <div class="item">
+                      <h2>Low Code</h2>
+                      <p class="date">October 14, 2022 (4u)</p>
+                      <p class="description">Zoals bij de vorige seminarie werd er tijdens het seminarie gekeken om op een flexibele en snelle manier te ontwikkelen. Hierbij werd een introductie gegeven over het programma Salesforce en Oracle Apex.</p>
+                    </div>
+                    <div class="item">
+                      <h2>Low Code</h2>
+                      <p class="date">October 21, 2022</p>
+                      <p class="description">In ons laatste seminarie werd een introductie gegeven in de low code programma’s Outsystems en Mendix</p>
+                    </div>
+                    <div class="item">
+                      <h2>Hackathon</h2>
+                      <p class="date">March 23, 2023</p>
+                      <p class="description">Twee dagen lang worden er in groepjes gewerkt om een applicatie te maken die studenten met een motorische achterstand kan helpen.</p>
+                    </div>
+                  </div>
+                  
+            </div>
+            <div class="backgroundcard">
+                <h6 class="backgroundcard-title" id="hacker_title">Persoonlijke ontwikkeling</h6>
+                <div class="cardcontainer">
+                    <div class="expandcard" id="card1">
+                      <div class="card-text">
+                        <h2>Projectweek</h2>
+                        <p>14/02/2022 – 18/02/2022 (27u)</p>
+                      </div>
+                      <div class="card-expand">
+                        <p>Deze week was een kick-off voor het Research Project. Hierbij werd er uitleg gegeven over het komende semester en het research project. De rest van de week waren er POP-sessies die als een teambuilding diende om de rest van het team beter te leren kennen. </p>
+                      </div>
+                    </div>
+                    <div class="expandcard" id="card2">
+                      <div class="card-text">
+                        <h2>POP-sessie “Brein aan het werk”</h2>
+                        <p>8/03/2022 (3u)</p>
+                      </div>
+                      <div class="card-expand">
+                        <p>We gebruiken het internet voor ons werk, onwe studies en in onze vrije tijd. We zijn bijna 24 uur per dag verbonden. In deze POP-sessie kijken we welk effect dit heeft op onze hersenen en zoeken we naar tools om ons werk zo effeciënt mogelijk aan te pakken.</p>
+                      </div>
+                    </div>
+                    <div class="expandcard" id="card3">
+                      <div class="card-text">
+                        <h2>POP-sessie “POPping”</h2>
+                        <p>8/03/2022 (3u)</p>
+                      </div>
+                      <div class="card-expand">
+                        <p>Tijden de POP-sessie gingen we in groep aan de slag om meer inzicht te krijgen in de vaardigheden van onszelf en de rest van het team. Ook werd er geoefend op het geven en ontvangen van feedback. Tenslotte werd een aan de slag gegaan met het opstellen van een persoonlijk ontwikkelingsplan.</p>
+                      </div>
+                    </div>
+                    <div class="expandcard">
+                        <div class="card-text">
+                            <h2>POP-sessie “My team and I”</h2>
+                            <p>12/10/2022 (3u)</p>
+                          </div>
+                        <div class="card-expand">
+                        <p>Een echte teambuilding oefening waarbij de focus lag op groepsdoelen, teamwork en groepsdynamica. </p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="backgroundcard">
+                <h6 class="backgroundcard-title">Extra's</h6>
+                <div class="carousel-container">
+                    <div class="carousel-wrapper">
+                      <div class="carouselcard">
+                        <div class="carouselcard-content">
+                            ChatGPT and the future of IT
+                            <img class="centerimage" src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/AZ3C2MC6TFISFPLH23LDWY2B74.jpg" width="100px">
+                        </div>
+                      </div>
+                      <div class="carouselcard">
+                        <div class="carouselcard-content">
+                            Google Kickstart Round G
+                            <img class="centerimagegoogle" src="https://codingcompetitions.withgoogle.com/static/kickstart-fb.jpg" width="100px">
+                        </div>
+                      </div>
+                      <div class="carouselcard">
+                        <div class="carouselcard-content">
+                            The future of mobility
+                            <img class="centerimagefuture" src="https://imageio.forbes.com/specials-images/imageserve/6092be120ca4a42c219d4448/Future-of-the-auto-industry/960x0.jpg?format=jpg&width=960" width="350px">
+                        </div>
+                      </div>
+                      <div class="carouselcard">
+                        <div class="carouselcard-content">
+                            The future of gaming
+                            <img class="centerimagefuture" src="https://matrixmag.com/wp-content/uploads/2022/09/Future-of-Gaming.webp" width="350px">
+                        </div>
+                      </div>
+                      <div class="carouselcard">
+                        <div class="carouselcard-content">
+                            Demis Hassabis – AI, Superintelligence & the Future of Humanity | Lex Fridman Podcast
+                            <a class="linkbutton" href="https://www.youtube.com/watch?v=Gfr50f6ZBvo&t=4186s">Youtube link</a>
+                        </div>
+                      </div>
+                      <div class="carouselcard">
+                        <div class="carouselcard-content">
+                            Build a 2D Platformer Game in Unity | Unity Beginner Tutorial
+                            <a class="linkbutton" href="https://www.youtube.com/watch?v=Ii-scMenaOQ&list=PLrnPJCHvNZuCVTz6lvhR81nnaf1a-b67U">Youtube link</a>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="previous-button">&#8249;</button>
+                    <button class="next-button">&#8250;</button>
+                  </div>
+            </div>
+            <div class="parallax_group outro_screen" id="outro">
+                The end
+            </div>
+        </div>
     </body>
+    <script src="js/main.js"></script>
 </html>

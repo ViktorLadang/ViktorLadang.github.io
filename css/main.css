@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&family=IBM+Plex+Mono:wght@100&family=Lobster&family=Permanent+Marker&family=Rajdhani&family=Sedgwick+Ave+Display&family=Space+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 4em;
+  color: white;
+  overflow-y: hidden;
+}
+body .parallax_wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+body .parallax_wrapper .intro_screen {
+  height: 200px;
+  background: linear-gradient(45deg, #2c3e50, #bdc3c7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .parallax_wrapper .outro_screen {
+  height: 100vh;
+  background-color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .parallax_wrapper .group1 {
+  background: #2c3e50;
+}
+body .parallax_wrapper .backgroundcard {
+  background: #2c3e50;
+  border-top: 5px solid;
+  -o-border-image: linear-gradient(45deg, #263545, #263545);
+     border-image: linear-gradient(45deg, #263545, #263545);
+  border-image-slice: 1;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+body .parallax_wrapper .backgroundcard .cardcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: 20;
+  margin-top: 20;
+}
+body .parallax_wrapper .backgroundcard .cardcontainer .expandcard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 1rem;
+  font-size: large;
+  cursor: pointer;
+  transition: height 5s ease;
+  font-family: "DynaPuff", cursive;
+  border-radius: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #646f8e;
+  margin: 10;
+  width: 75%;
+}
+body .parallax_wrapper .backgroundcard .cardcontainer .expandcard:hover {
+  background: linear-gradient(45deg, #ff9966, #ff5e62);
+  font-family: "DynaPuff", cursive;
+}
+body .parallax_wrapper .backgroundcard .cardcontainer .expandcard:hover .card-expand {
+  display: block;
+}
+body .parallax_wrapper .backgroundcard .cardcontainer .expandcard .card-text {
+  width: 50%;
+}
+body .parallax_wrapper .backgroundcard .cardcontainer .expandcard .card-expand {
+  display: none;
+  width: 50%;
+}
+body .parallax_wrapper .backgroundcard .cardcontainer .expanded {
+  background: linear-gradient(45deg, #ff9966, #ff5e62);
+}
+body .parallax_wrapper .backgroundcard .carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body .parallax_wrapper .backgroundcard .carousel-container .carousel-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.5s ease;
+}
+body .parallax_wrapper .backgroundcard .carousel-container .carousel-wrapper .carouselcard {
+  flex: 0 0 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+body .parallax_wrapper .backgroundcard .carousel-container .carousel-wrapper .carouselcard .carouselcard-content {
+  background: linear-gradient(45deg, #4ca1af, #c4e0e5);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 50px;
+  flex-wrap: wrap;
+}
+body .parallax_wrapper .backgroundcard .carousel-container .carousel-wrapper .carouselcard .carouselcard-content a:link, body .parallax_wrapper .backgroundcard .carousel-container .carousel-wrapper .carouselcard .carouselcard-content a:visited {
+  background-color: #446b7a;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+}
+body .parallax_wrapper .backgroundcard .carousel-container .carousel-wrapper .carouselcard .carouselcard-content a:hover, body .parallax_wrapper .backgroundcard .carousel-container .carousel-wrapper .carouselcard .carouselcard-content a:active {
+  background-color: #548396;
+  border-radius: 10px;
+}
+body .parallax_wrapper .backgroundcard .carousel-container .carousel-wrapper .carouselcard .carouselcard-content .centerimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  border-radius: 20px;
+}
+body .parallax_wrapper .backgroundcard .carousel-container .carousel-wrapper .carouselcard .carouselcard-content .centerimagegoogle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  border-radius: 20px;
+}
+body .parallax_wrapper .backgroundcard .carousel-container .carousel-wrapper .carouselcard .carouselcard-content .centerimagefuture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border-radius: 20px;
+}
+body .parallax_wrapper .backgroundcard .carousel-container .previous-button, body .parallax_wrapper .backgroundcard .carousel-container .next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  border: none;
+  background-color: transparent;
+}
+body .parallax_wrapper .backgroundcard .carousel-container .previous-button {
+  left: 20px;
+  color: #4ca1af;
+}
+body .parallax_wrapper .backgroundcard .carousel-container .next-button {
+  right: 20px;
+  color: #c4e0e5;
+}
+body .parallax_wrapper .backgroundcard .backgroundcard-title {
+  text-align: center;
+  padding-top: 20px;
+}
+body .parallax_wrapper .backgroundcard .portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 0 20px;
+}
+body .parallax_wrapper .backgroundcard .item {
+  background-color: #bdc3c7;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.2s ease-in-out;
+}
+body .parallax_wrapper .backgroundcard .item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+body .parallax_wrapper .backgroundcard .item h2 {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+body .parallax_wrapper .backgroundcard .item .date {
+  font-size: 16px;
+  color: #888888;
+  margin: 0 0 10px;
+}
+body .parallax_wrapper .backgroundcard .item .description {
+  font-size: 16px;
+  margin: 0 0 20px;
+}
+body .parallax_wrapper .backgroundcard .item .extra-info {
+  display: none;
+  margin-top: 10px;
+}
+body .parallax_wrapper .backgroundcard .item .extra-info p {
+  margin: 5px 0;
+}
+body .parallax_wrapper .backgroundcard .item.active {
+  background: linear-gradient(45deg, #614385, #516395);
+  font-weight: bold;
+  font-family: "Sedgwick Ave Display", cursive;
+  color: white;
+}
+body .parallax_wrapper .backgroundcard .item.active h2 {
+  color: white;
+}
+body .parallax_wrapper .backgroundcard .item.active .description {
+  font-family: "Rajdhani", sans-serif;
+}
+body .parallax_wrapper .backgroundcard .item.active .date {
+  color: #e454ef;
+}
+body .parallax_wrapper .backgroundcard .item.active .extra-info {
+  display: block;
+}
+body .parallax_wrapper .backgroundcard .card-group:hover > .card {
+  cursor: pointer;
+  transform: rotateY(180px);
+}
+body .parallax_wrapper .backgroundcard .card-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  perspective: 1000px;
+}
+body .parallax_wrapper .backgroundcard .card-group .container:hover > .card {
+  transform: rotateY(180deg);
+}
+body .parallax_wrapper .backgroundcard .card-group .container .card {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  font-family: "DynaPuff", cursive;
+}
+body .parallax_wrapper .backgroundcard .card-group .container .card.flipped {
+  transform: rotateY(180deg);
+}
+body .parallax_wrapper .backgroundcard .card-group .container .card .front, body .parallax_wrapper .backgroundcard .card-group .container .card .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+body .parallax_wrapper .backgroundcard .card-group .container .card .front {
+  z-index: 2;
+  transform: rotateY(0deg);
+  font-size: 20px;
+  font-weight: bold;
+}
+body .parallax_wrapper .backgroundcard .card-group .container .card .back {
+  transform: rotateY(180deg);
+  pointer-events: none;
+  font-size: 20px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+}
+body .parallax_wrapper .backgroundcard .card-group .container .card .back .bold {
+  font-weight: bold;
+}
+body .parallax_wrapper .parallax_group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+body .parallax_wrapper .parallax_group .parallax_layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .parallax_wrapper .parallax_group .base_layer {
+  transform: translateZ(-300px) scale(2.1);
+}
+body .parallax_wrapper .parallax_group .mid_layer {
+  transform: translateZ(0);
+}
+body .parallax_wrapper .parallax_group .top_layer {
+  transform: translateZ(210px) scale(0.4);
+}
+body .parallax_wrapper #group-1 > .base_layer {
+  background-color: #2F3C41;
+}
+body .parallax_wrapper #group-2 > .mid_layer {
+  background-color: #2F3C41;
+}
+body .parallax_wrapper #card-1 {
+  background: linear-gradient(45deg, #2a758e, #402ba2);
+}
+body .parallax_wrapper #card-2 {
+  background: linear-gradient(45deg, #2a758e, #c2e59c);
+  color: black;
+}
+body .parallax_wrapper #body > .backgroundcard {
+  border-top: 5px solid;
+  background: linear-gradient(45deg, #2a758e, #402ba2);
+  border-image-slice: 1;
+}/*# sourceMappingURL=main.css.map */
